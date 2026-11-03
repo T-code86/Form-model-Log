@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f6f2ec">
+    <title>Tony C Nation | Sign in</title>
+    <link rel="stylesheet" href="style.css">  
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="site">
+        <p class="eyebrow">A place to begin again</p>
+        <h1>Tony C Nation</h1>
+        <p class="intro">Every great story starts with a new chapter.</p>
+
+        <div class="book-scene">
+            <section class="book" id="book" aria-label="Tony C Nation account">
+                <div class="inside" aria-label="Welcome" aria-hidden="true" inert>
+                    <section class="inside-page">
+                        <p class="page-mark">Your next chapter</p>
+                        <h2>Make yourself at home.</h2>
+                        <p>This is your space to explore, connect, and make something meaningful.</p>
+                    </section>
+                    <section class="inside-page welcome-page">
+                        <div class="welcome-copy">
+                            <p class="page-mark">The story continues</p>
+                            <h2 id="welcome-heading">Welcome to Tony C Nation</h2>
+                            <p id="welcome-message">We're glad you're here. Your next chapter starts now.</p>
+                        </div>
+                        <span class="storybook-ball" aria-hidden="true"></span>
+                        <button class="sign-out" id="sign-out" type="button">Sign out</button>
+                    </section>
+                    <div class="page-stack" aria-hidden="true" inert>
+                        <article class="turning-page">
+                            <div class="page-front">
+                                <div class="page-copy">
+                                    <p class="page-mark">Chapter one</p>
+                                    <h2>A fresh beginning.</h2>
+                                </div>
+                            </div>
+                            <div class="page-back"></div>
+                        </article>
+                        <article class="turning-page">
+                            <div class="page-front">
+                                <div class="page-copy">
+                                    <p class="page-mark">Chapter two</p>
+                                    <h2>Find your place.</h2>
+                                </div>
+                            </div>
+                            <div class="page-back"></div>
+                        </article>
+                        <article class="turning-page">
+                            <div class="page-front">
+                                <div class="page-copy">
+                                    <p class="page-mark">Chapter three</p>
+                                    <h2>Make it yours.</h2>
+                                </div>
+                            </div>
+                            <div class="page-back"></div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="cover" id="cover">
+                    <div class="cover-content">
+                        <section class="form-panel">
+                            <p class="page-mark" id="form-eyebrow">Your story awaits</p>
+                            <h2 id="form-heading">Welcome back</h2>
+                            <p class="form-intro" id="form-intro">Sign in to pick up where you left off.</p>
+
+                            <form id="account-form" novalidate>
+                                <div class="field">
+                                    <label for="email">Email address</label>
+                                    <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                                </div>
+                                <div class="field">
+                                    <label for="password">Password</label>
+                                    <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" minlength="6" required>
+                                </div>
+                                <div class="field" id="confirm-field" hidden>
+                                    <label for="confirm-password">Confirm password</label>
+                                    <input id="confirm-password" name="confirm-password" type="password" autocomplete="new-password" placeholder="Enter your password again" minlength="6">
+                                </div>
+                                <button class="submit-button" id="submit-button" type="submit">Sign in</button>
+                                <p class="form-error" id="form-error" role="alert" aria-live="polite"></p>
+                            </form>
+                            <p class="demo-note">Preview only — account details aren't saved.</p>
+                        </section>
+
+                        <aside class="greeting-panel">
+                            <div class="greeting-icon" aria-hidden="true">T</div>
+                            <h2 id="greeting-heading">Hello, friend!</h2>
+                            <p id="greeting-copy">New here? Create an account and start your story with us.</p>
+                            <button class="switch-button" id="switch-mode" type="button">Create account</button>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
